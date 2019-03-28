@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="20dp"
+    android:layoutDirection="rtl"
+    tools:context=".ui.activites.AskandSaleFoodActivity">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/RestInfo_cardview"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Stuts_AskFoodRow_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="open now"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/Status_AskFoodRow_Img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_open" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/MinChargeTxt_AskFood_Row_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/MinCharge_AskFood_Row_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="الحد الادني لتجهيز الطلب"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/DeleiveryCostTxt_AskFood_Row_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/DeleiveryCost_AskFood_Row_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="رسوم التوصيل"
+
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_weight="0.50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/RestuName_AskFood_Row_TXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="welcom"
+                android:gravity="end"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/FoodComp_AskFood_Row_TXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="welcom"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Star5_AskFoodRow_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/star_g" />
+
+                <ImageView
+                    android:id="@+id/Star4_AskFoodRow_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/star_g" />
+
+                <ImageView
+                    android:id="@+id/Star3_AskFoodRow_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/star_g" />
+
+                <ImageView
+                    android:id="@+id/Star2_AskFoodRow_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/star_g" />
+
+                <ImageView
+                    android:id="@+id/Star1_AskFoodRow_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/star_g" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/RestuIcom_AskFoodRow_img"
+        android:layout_width="70dp"
+
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.25"
+        android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

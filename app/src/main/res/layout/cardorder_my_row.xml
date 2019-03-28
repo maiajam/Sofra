@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:layoutDirection="rtl"
+    tools:context=".ui.activites.MyCartOrdersActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/MyOrderItems_CardOrder_row_cardview"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/Costtxt_CardOrder_row_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/cost"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/Cost_CardOrder_row_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="welcom"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/OrderItemName_CardOrder_row_TXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="welcom"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Increse_CardOrder_row_B"
+
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.15"
+                        android:background="#83e711"
+                        android:text="+"
+                        android:textColor="#ffffff"
+                        android:textSize="5sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/AmountValue_CardOrder_row_Ed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_weight="0.50"
+                        android:background="@drawable/edittextborder" />
+
+                    <Button
+                        android:gravity="center"
+                        android:id="@+id/Decrese_CardOrder_row_B"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+
+                        android:layout_weight="0.15"
+                        android:background="#83e711"
+                        android:text="-"
+                        android:textSize="5sp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Amounttxt_CardOrder_row_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Amount" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/OrderItemIcon_CardOrder_row_img"
+                android:layout_width="100dp"
+
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.25"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/Totaltxt_CardOrder_row_TXT"
+        android:text="@string/Toatal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Totalvalue_CardOrder_row_TXT"
+        android:text="@string/Toatal"/>
+</LinearLayout>
+</LinearLayout>
